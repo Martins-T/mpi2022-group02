@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Praktiskais darbs 1</string>
+    <string name="armands">Armands Rancevs</string>
+    <string name="artis">Artis Rudzītis</string>
+    <string name="kaspars">Kaspars Polis</string>
+    <string name="martins">Mārtiņš Tarando</string>
+    <string name="izstradaja">Izstrādāja - Kaspars Polis</string>
+</resources>
