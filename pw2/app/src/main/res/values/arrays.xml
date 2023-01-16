@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="members_array">
+        <item>Armands Rancevs</item>
+        <item>Artis Rudzītis</item>
+        <item>Mārtiņš Tarando</item>
+        <item>Kaspars Polis</item>
+    </string-array>
+</resources>
