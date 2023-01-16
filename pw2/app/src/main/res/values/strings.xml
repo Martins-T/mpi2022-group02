@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Praktiskais2</string>
+    <string name="nexpage">NextPage</string>
+    <string name="activitie_1">1-nd Activity</string>
+    <string name="dialog">Dialog</string>
+    <string name="back">Back</string>
+    <string name="activitie_2">2-nd Activity</string>
+</resources>
