@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pw1_artisr</string>
+    <string name="artisr">Artis Rudzītis</string>
+    <string name="kasparsp">Kaspars Polis</string>
+    <string name="dev_by">Application was developed by Artis Rudzītis</string>
+    <string name="first_text">This is the first application from Group 2</string>
+    <string name="armandsr">Armands Rancevs</string>
+    <string name="martinst">Mārtiņš Tarando</string>
+</resources>
