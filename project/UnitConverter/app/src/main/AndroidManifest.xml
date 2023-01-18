@@ -8,22 +8,27 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.UnitConverter"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WeightActivity" />
-        <activity android:name=".LengthActivity" />
-        <activity android:name=".SpeedActivity" />
+        <activity
+            android:name=".WeightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LengthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpeedActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
