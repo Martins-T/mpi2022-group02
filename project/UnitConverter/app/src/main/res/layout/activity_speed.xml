@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#212123">
+    android:background="#212123"
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -18,34 +18,144 @@
             android:id="@+id/button_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/back_curved_arrow_48"
-            />
+            android:contentDescription="Back button"
+            android:drawableLeft="@drawable/back_curved_arrow_48" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/icon"
+            android:id="@+id/speed_icon"
             android:layout_width="55dp"
             android:layout_height="45dp"
             android:layout_marginRight="8dp"
-            android:src="@drawable/speedometer_96"
             android:background="#9F2936"
-            app:shapeAppearance="@style/RoundedCornerShape"
-            />
+            android:src="@drawable/speedometer_96"
+            app:shapeAppearance="@style/RoundedCornerShape" />
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/speed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Speed"
-            android:textSize="30sp"
-            android:textColor="#9F2936"/>
+            android:textColor="#9F2936"
+            android:textSize="30sp" />
 
         <ImageView
-            android:id="@+id/icon2"
+            android:id="@+id/sliders_icon"
             android:layout_width="53dp"
             android:layout_height="53dp"
             android:layout_marginLeft="22dp"
             android:layout_marginRight="8dp"
             android:src="@drawable/sliders_48" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speed_converter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/kilometers_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:text="From"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/km_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#9F2936"
+                android:text="kilometers/h - km/h"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/input_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="1"
+                android:inputType="numberDecimal"
+                android:minHeight="40dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28sp"
+                app:backgroundTint="#9F2936" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/miles_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:text="To"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/mi_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#9F2936"
+                android:text="miles/h - mi/h"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/output_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="0.621"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:backgroundTint="#9F2936" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
