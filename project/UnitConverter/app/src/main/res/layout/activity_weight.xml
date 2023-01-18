@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#212123">
-
+    android:background="#212123"
+    android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -18,36 +18,143 @@
             android:id="@+id/button_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/back_curved_arrow_48"
-            />
+            android:contentDescription="Back button"
+            android:drawableLeft="@drawable/back_curved_arrow_48" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/icon"
+            android:id="@+id/weight_icon"
             android:layout_width="55dp"
             android:layout_height="45dp"
             android:layout_marginRight="8dp"
-            android:src="@drawable/dumbbell_96"
             android:background="#4E8542"
-            app:shapeAppearance="@style/RoundedCornerShape"
-            />
+            android:src="@drawable/dumbbell_96"
+            app:shapeAppearance="@style/RoundedCornerShape" />
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weight"
-            android:textSize="30sp"
-            android:textColor="#4E8542"/>
+            android:textColor="#4E8542"
+            android:textSize="30sp" />
 
         <ImageView
-            android:id="@+id/icon2"
+            android:id="@+id/sliders_icon"
             android:layout_width="53dp"
             android:layout_height="53dp"
             android:layout_marginLeft="22dp"
             android:layout_marginRight="8dp"
             android:src="@drawable/sliders_48" />
-
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/weight_converter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:id="@+id/kilogram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:text="From"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#4E8542"
+                android:text="kilogram - kg"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/input_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="1"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="32sp"
+                app:backgroundTint="#4E8542" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:text="To"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/lb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#4E8542"
+                android:text="pound - lb"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/output_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="2.205"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:backgroundTint="#4E8542" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 </RelativeLayout>
