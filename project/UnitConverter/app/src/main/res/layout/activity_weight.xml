@@ -14,49 +14,40 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_curved_arrow_48" />
+            android:drawableLeft="@drawable/back_curved_arrow_48"
+            />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dumbbell_48"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/dumbbell_96"
             android:background="#4E8542"
-            app:cornerRadius="14dp"/>
+            app:shapeAppearance="@style/RoundedCornerShape"
+            />
 
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weight"
-            android:textSize="32sp"
-            android:textColor="@color/white"/>
+            android:textSize="30sp"
+            android:textColor="#4E8542"/>
 
         <ImageView
             android:id="@+id/icon2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="8dp"
             android:src="@drawable/sliders_48" />
 
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/button_back2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_alignParentBottom="true"
-
-        android:text="Back"
-        />
 
 </RelativeLayout>

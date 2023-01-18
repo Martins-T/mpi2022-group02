@@ -2,13 +2,12 @@ package com.example.unitconverter;
 
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
 
-public class WeightActivity extends AppCompatActivity implements View.OnClickListener {
+public class WeightActivity extends AppCompatActivity {
 
     MaterialButton buttonBack;
 
@@ -17,17 +16,14 @@ public class WeightActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight);
 
-        assignId(buttonBack, R.id.button_back);
+        buttonBack = (MaterialButton) findViewById(R.id.button_back);
+        buttonBack.setOnClickListener(view -> goBack());
 
     }
 
-    void assignId(MaterialButton button, int id){
-        button = findViewById(id);
-        button.setOnClickListener(this);
-    }
 
-    @Override
-    public void onClick(View view) {
 
+    public void goBack() {
+        this.finish();
     }
 }

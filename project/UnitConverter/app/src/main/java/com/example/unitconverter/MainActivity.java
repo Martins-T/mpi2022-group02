@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -19,10 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        assignId(buttonWeight, R.id.button_weight);
-        assignId(buttonLength, R.id.button_length);
-        assignId(buttonSpeed, R.id.button_speed);
-
         buttonWeight = (MaterialButton) findViewById(R.id.button_weight);
         buttonWeight.setOnClickListener(view -> openWeightScreen());
 
@@ -34,10 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    void assignId(MaterialButton button, int id){
-        button = findViewById(id);
-        button.setOnClickListener(this);
-    }
 
     public void openWeightScreen() {
         Intent intent = new Intent(this,WeightActivity.class);

@@ -8,26 +8,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
 
-public class SpeedActivity extends AppCompatActivity implements View.OnClickListener {
+public class SpeedActivity extends AppCompatActivity {
 
     MaterialButton buttonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weight);
+        setContentView(R.layout.activity_speed);
 
-        assignId(buttonBack, R.id.button_back);
+        buttonBack = (MaterialButton) findViewById(R.id.button_back);
+        buttonBack.setOnClickListener(view -> goBack());
 
     }
 
-    void assignId(MaterialButton button, int id){
-        button = findViewById(id);
-        button.setOnClickListener(this);
-    }
 
-    @Override
-    public void onClick(View view) {
-
+    public void goBack() {
+        this.finish();
     }
 }

@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WeightActivity" />
+        <activity android:name=".LengthActivity" />
+        <activity android:name=".SpeedActivity" />
     </application>
 
 </manifest>

@@ -8,13 +8,45 @@
     android:background="#212123">
 
 
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_alignParentBottom="true"
-        android:text="Back"
-        />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/back_curved_arrow_48"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/speedometer_96"
+            android:background="#9F2936"
+            app:shapeAppearance="@style/RoundedCornerShape"
+            />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textSize="30sp"
+            android:textColor="#9F2936"/>
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/sliders_48" />
+
+    </LinearLayout>
 
 </RelativeLayout>
